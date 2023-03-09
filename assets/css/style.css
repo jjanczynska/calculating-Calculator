@@ -17,6 +17,7 @@ body {
     background-color: aqua;
     padding: 1em;
 }
+/* Calculator screen*/
 
 #result {
     width: 100%;
@@ -28,4 +29,13 @@ input[type=text] {
     color: black;
     font-weight: bold;
     border: 3px solid black;
+}
+
+/*calculator buttons*/
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 4em);
+    grid-template-rows: minmax(7em, 6), repeat(4, 5em);
+
 }
