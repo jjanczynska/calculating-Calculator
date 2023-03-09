@@ -1,0 +1,8 @@
+/*main style on a body element*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(44, 84, 109);
+    font-family: "Prompt", sans-serif;
+}
