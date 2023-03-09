@@ -11,17 +11,17 @@ body {
 
 .calculator {
     margin: 10em, auto;
-    width: 30vw;
-    border: 4px, solid black;
-    border-radius: 3em;
-    background-color: aqua;
+    width: 35vw;
+    border: 3px, solid black;
+    border-radius: 2em;
+    background-color: aquamarine;
     padding: 1em;
 }
 /* Calculator screen*/
 
 #result {
     width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 input[type=text] {
