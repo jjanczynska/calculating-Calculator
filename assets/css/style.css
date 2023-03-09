@@ -55,11 +55,26 @@ button {
 
 /*Adding active and hover functionality to buttons*/
 
-.button:active {
+button:active {
     box-shadow: 0 0.1em grey;
     transform: translateY(00.1em);
 }
 
-.button:hover {
+button:hover {
     background-color: yellow;
+}
+
+/* Change colours on operational buttons*/
+
+.operator {
+    color: rgb(250, 235, 215);
+    background-color: rgb(0, 153, 255);
+}
+
+.clear {
+   background-color: #ff3300;
+}
+
+.equal {
+    background-color: #33cc33;
 }
