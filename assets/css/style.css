@@ -1,4 +1,4 @@
-/*main style on a body element*/
+
 
 body {
     padding: 0;
@@ -7,20 +7,19 @@ body {
     font-family: "Prompt", sans-serif;
 }
 
-/*main style on calculator*/
 
 .calculator {
-    margin: 10em, auto;
-    width: 35vw;
-    border: 3px, solid black;
+    margin: 10em auto;
+    width: 20vw;
+    border: 3px solid black;
     border-radius: 2em;
     background-color: aquamarine;
     padding: 1em;
 }
-/* Calculator screen*/
+
 
 #result {
-    width: 100%;
+    width: 90%;
     margin-bottom: 0.5em;
 }
 
@@ -31,12 +30,12 @@ input[type=text] {
     border: 3px solid black;
 }
 
-/*calculator buttons*/
+
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 4em);
-    grid-template-rows: minmax(7em, 6), repeat(4, 5em);
+    grid-template-rows: minmax(7em, 6) repeat(4, 5em);
 
 }
 
@@ -53,7 +52,7 @@ button {
 
 }
 
-/*Adding active and hover functionality to buttons*/
+
 
 button:active {
     box-shadow: 0 0.1em grey;
@@ -64,7 +63,7 @@ button:hover {
     background-color: yellow;
 }
 
-/* Change colours on operational buttons*/
+
 
 .operator {
     color: rgb(250, 235, 215);
