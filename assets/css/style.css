@@ -39,3 +39,16 @@ input[type=text] {
     grid-template-rows: minmax(7em, 6), repeat(4, 5em);
 
 }
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.2em;
+    margin-right: 0.2em;
+    margin-bottom: 0.2em;
+    background-color: #a0aca5;
+	border: none;
+	font-size: 2em;
+    font-weight: bold;
+
+}
