@@ -52,3 +52,14 @@ button {
     font-weight: bold;
 
 }
+
+/*Adding active and hover functionality to buttons*/
+
+.button:active {
+    box-shadow: 0 0.1em grey;
+    transform: translateY(00.1em);
+}
+
+.button:hover {
+    background-color: yellow;
+}
