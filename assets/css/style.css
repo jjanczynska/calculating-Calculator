@@ -10,8 +10,8 @@ body {
 
 .calculator {
     margin: 10em auto;
-    width: 20vw;
-    border: 3px solid black;
+    width: 18%;
+    border: 5px solid black;
     border-radius: 2em;
     background-color: aquamarine;
     padding: 1em;
