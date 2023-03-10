@@ -10,7 +10,7 @@ body {
 
 .calculator {
     margin: 10em auto;
-    width: 18%;
+    width: 38vh;
     border: 5px solid black;
     border-radius: 2em;
     background-color: aquamarine;
@@ -19,7 +19,8 @@ body {
 
 
 #result {
-    width: 90%;
+    width: 93%;
+    height: 1.5em;
     margin-bottom: 0.5em;
 }
 
@@ -35,19 +36,19 @@ input[type=text] {
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 4em);
-    grid-template-rows: minmax(7em, 6) repeat(4, 5em);
+    grid-template-rows: minmax(7em, 6) repeat(4, 5em);/* throws an error in css-only 0 can be a unit. You must put a unit after your number : minmax(7em,6) repeat(4,5em)-to be checked*/
 
 }
 
 button {
-    width: 50px;
-    height: 50px;
+    height: 1.9em;
+    width: 1.9em;
     border-radius: 0.2em;
     margin-right: 0.2em;
     margin-bottom: 0.2em;
     background-color: #a0aca5;
 	border: none;
-	font-size: 2em;
+	font-size: 1.7em;
     font-weight: bold;
 
 }
