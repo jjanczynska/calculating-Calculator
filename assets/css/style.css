@@ -3,17 +3,17 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(44, 84, 109);
     font-family: "Prompt", sans-serif;
+    background: linear-gradient(45deg, black, rgb(179, 15, 179));
 }
 
 
 .calculator {
     margin: 10em auto;
     width: 38vh;
-    border: 5px solid black;
+    border: 7px solid black;
     border-radius: 2em;
-    background-color: aquamarine;
+    background-color: rgb(80, 188, 45);
     padding: 1em;
 }
 
@@ -69,14 +69,21 @@ button:hover {
 .operator {
     background-color: rgb(0, 153, 255);
     border-radius: 1em;
+    border: 2px solid black;
 }
 
 .clear {
    background-color: #ff3300;
    border-radius: 1em;
+   border: 2px solid black;
 }
 
 .equal {
-    background-color: #33cc33;
+    background-color: #813d76;
     border-radius: 1em;
+    border: 2px solid black;
+}
+
+.number {
+    border: 2px solid black;
 }
