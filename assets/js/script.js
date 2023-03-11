@@ -7,16 +7,16 @@ let buttons = document.getElementsByClassName("buttons")[0];
 buttons.addEventListener("click", (function(e) {
     let target = e.target;
 // function that inputs pressed number button into the calculator screen
-    if(target.classList.contains(number)) {
+    if(target.classList.contains("number")) {
         result.value += target.value;
     }
 // function that inputs pressed operator button into the calculator screen
-if(target.classList.contains(operator)) {
-    result.value += " " + target.value;
+if(target.classList.contains("operator")) {
+    result.value += "" + target.value;
 }
 // function deleting the calculator screen with C button
 if(target.classList.contains("clear")) {
-    result.value = " ";
+    result.value = "";
 }
 // function inputting equal button into calculator
 if(target.classList.contains("equal")) {
