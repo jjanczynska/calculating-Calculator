@@ -22,6 +22,7 @@ body {
     width: 93%;
     height: 1.5em;
     margin-bottom: 0.5em;
+    align-items: end;
 }
 
 input[type=text] {
@@ -29,6 +30,7 @@ input[type=text] {
     color: black;
     font-weight: bold;
     border: 3px solid black;
+    text-align: end;
 }
 
 
