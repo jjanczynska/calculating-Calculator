@@ -1,6 +1,6 @@
 // declaring variables for easier operations
 let result = document.getElementById("result");
-let buttons = document.getElementsByClassName("buttons");
+let buttons = document.getElementsByClassName("buttons")[0];
 
 // adding "click" event listeners to clicked buttons
 
@@ -15,7 +15,16 @@ if(target.classList.contains(operator)) {
     result.value += " " + target.value;
 }
 // function deleting the calculator screen with C button
-if(target.classList.conatins("clear")) {
+if(target.classList.contains("clear")) {
     result.value = " ";
 }
-}))
+// function inputting equal button into calculator
+if(target.classList.contains("equal")) {
+    result.value = calculate(result.value);
+}
+// function inputting equal button into calculator
+if(target.classList.contains("equal")) {
+    result.value = calculate(result.value);
+}
+    }
+));
