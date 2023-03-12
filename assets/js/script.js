@@ -35,6 +35,7 @@ function calculate(str) {
     let myArr = str.split(" ");
     let total = 0;
     let operator = null;
+
 // If a button in my array is a + then operator is a + and so on through all the operators("-", "/", "x") 
     for (let i = 0; i < myArr.lenght; i++) {
         if (myArr[i] ==="+") {
@@ -64,4 +65,4 @@ function calculate(str) {
         }
     }
     return total;
-}
+};
