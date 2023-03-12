@@ -14,11 +14,13 @@ body {
     border-radius: 2em;
     background-color: rgb(80, 188, 45);
     padding: 1em;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 
 #display {
-    width: 93%;
+    grid-column: 1 / span 4;
     height: 1.5em;
     margin-bottom: 0.5em;
     background-color: antiquewhite;
@@ -33,11 +35,9 @@ body {
 
 .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 4em);
-    grid-template-rows: minmax(7em, 6) repeat(5, 5em);
-    /* throws an error in css-only 0 can be a unit. You must put a unit after your number : minmax(7em,6) repeat(4,5em)-to be checked*/
-
+    grid-template-columns: auto auto auto auto;
 }
+
 
 button {
     height: 1.9em;
@@ -69,28 +69,35 @@ button:hover {
     background-color: rgb(0, 153, 255);
     border-radius: 1em;
     border: 2px solid black;
+    grid-column: 4;
 }
 
 .clear {
     background-color: #ff3300;
     border-radius: 1em;
     border: 2px solid black;
+    grid-column: 1;
 }
 
 .equal {
     background-color: #813d76;
     border-radius: 1em;
     border: 2px solid black;
-    width: 3.8em;
+    width: 1.9em;
+    grid-column: 4;
+
+
 }
 
 .number {
     border: 2px solid black;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .delOne {
     border: 2px solid black;
     background-color: orange;
-    width: 3.8em;
+    width: 1.9em;
     border-radius: 1em;
 }
