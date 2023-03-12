@@ -5,6 +5,7 @@ body {
     margin: 0;
     font-family: "Prompt", sans-serif;
     background: linear-gradient(45deg, rgb(80, 188, 45), rgb(179, 15, 179), black);
+    height: 100vh;
 }
 
 

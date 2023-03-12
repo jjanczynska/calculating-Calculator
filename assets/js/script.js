@@ -32,22 +32,22 @@ if(target.classList.contains("equal")) {
 
 // declearing function to calculate my inputs by making buttons into a string
 function calculate(str) {
-    let myArr = str.split(" ");
+    let arr = str.split(" ");
     let total = 0;
     let operator = null;
 
 // If a button in my array is a + then operator is a + and so on through all the operators("-", "/", "x") 
-    for (let i = 0; i < myArr.lenght; i++) {
-        if (myArr[i] ==="+") {
+    for (let i = 0; i < arr.lenght; i++) {
+        if (arr[i] ==="+") {
             operator = "+";
-        } else if (myArr[i] ==="-") { 
+        } else if (arr[i] ==="-") { 
             operator = "-";
-        } else if (myArr[i] ==="x") {
+        } else if (arr[i] ==="x") {
             operator = "*";
-        } else if (myArr[i] ==="&divide") {
+        } else if (arr[i] ==="&divide") {
             operator = "/";
         } else {
-            let num = parseInt(myArr[i]);
+            let num = parseInt(arr[i]);
 
   // Performing calculations and returning the result
             if (!isNaN(num)) {
@@ -67,3 +67,9 @@ function calculate(str) {
     }
     return total;
 }
+
+/**
+ * 8 js hint warnings of:
+ * Eight warnings
+19	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).- should I ignore?
+ */
