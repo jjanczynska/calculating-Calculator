@@ -10,6 +10,7 @@ body {
 .calculator {
     margin: 10em auto;
     width: 38vh;
+    height: 50vh;
     border: 7px solid black;
     border-radius: 2em;
     background-color: rgb(80, 188, 45);
@@ -75,15 +76,14 @@ button:hover {
     border-radius: 1em;
     border: 2px solid black;
     width: 1.9em;
-    grid-column: 4;
+    grid-column: 1 / span 3;
 
 
 }
 
 .number {
     border: 2px solid black;
-    grid-column-start: 1;
-    grid-column-end: 3;
+ 
 }
 
 .delOne {
