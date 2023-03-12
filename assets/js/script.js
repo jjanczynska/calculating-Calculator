@@ -33,7 +33,7 @@ if(target.classList.contains("equal")) {
 // declearing function to calculate my inputs by making buttons into a string
 function calculate(str) {
     let myArr = str.split(" ");
-    let total = 0Add final ;
+    let total = 0;
     let operator = null;
 
 // If a button in my array is a + then operator is a + and so on through all the operators("-", "/", "x") 
