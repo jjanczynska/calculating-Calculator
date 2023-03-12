@@ -47,7 +47,7 @@ function calculate(str) {
         } else if (myArr[i] ==="&divide") {
             operator = "/";
         } else {
-            let num = parseInt(arr[i]);
+            let num = parseInt(myArr[i]);
 
   // Performing calculations and returning the result
             if (!isNaN(num)) {
@@ -66,4 +66,4 @@ function calculate(str) {
         }
     }
     return total;
-};
+}
