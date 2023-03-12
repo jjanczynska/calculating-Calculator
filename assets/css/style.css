@@ -1,5 +1,3 @@
-
-
 body {
     padding: 0;
     margin: 0;
@@ -31,20 +29,13 @@ body {
     text-align: end;
 }
 
-input[type=text] {
-    font-size: 2em;
-    color: black;
-    font-weight: bold;
-    border: 3px solid black;
-    text-align: end;
-}
-
 
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 4em);
-    grid-template-rows: minmax(7em, 6) repeat(4, 5em);/* throws an error in css-only 0 can be a unit. You must put a unit after your number : minmax(7em,6) repeat(4,5em)-to be checked*/
+    grid-template-rows: minmax(7em, 6) repeat(4, 5em);
+    /* throws an error in css-only 0 can be a unit. You must put a unit after your number : minmax(7em,6) repeat(4,5em)-to be checked*/
 
 }
 
@@ -55,8 +46,8 @@ button {
     margin-right: 0.2em;
     margin-bottom: 0.2em;
     background-color: #a0aca5;
-	border: none;
-	font-size: 1.7em;
+    border: none;
+    font-size: 1.7em;
     font-weight: bold;
 
 }
@@ -81,9 +72,9 @@ button:hover {
 }
 
 .clear {
-   background-color: #ff3300;
-   border-radius: 1em;
-   border: 2px solid black;
+    background-color: #ff3300;
+    border-radius: 1em;
+    border: 2px solid black;
 }
 
 .equal {
