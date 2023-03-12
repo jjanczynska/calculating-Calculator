@@ -32,21 +32,12 @@ body {
 }
 
 
-
-.buttons {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-}
-
-
-button {
+buttons {
     height: 1.9em;
     width: 1.9em;
     border-radius: 0.2em;
     margin-right: 0.2em;
     margin-bottom: 0.2em;
-    background-color: #a0aca5;
-    border: none;
     font-size: 1.7em;
     font-weight: bold;
 
