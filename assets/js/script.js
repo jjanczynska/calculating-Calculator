@@ -33,7 +33,7 @@ if(target.classList.contains("equal")) {
 // declearing function to calculate my inputs by making buttons into a string
 function calculate(str) {
     let myArr = str.split(" ");
-    let total = 0;
+    let total = 0Add final ;
     let operator = null;
 
 // If a button in my array is a + then operator is a + and so on through all the operators("-", "/", "x") 
@@ -49,6 +49,7 @@ function calculate(str) {
         } else {
             let num = parseInt(arr[i]);
 
+  // Performing calculations and returning the result
             if (!isNaN(num)) {
                 if (operator === "+") {
                     total += num;
