@@ -31,4 +31,8 @@ if(target.classList.contains("equal")) {
 ));
 
 // declearing function to calculate my inputs by making buttons into a string
-function calculate(str) {}
+function calculate(str) {
+    let myArr = str.split(" ");
+    let total = 0;
+    let operator = null;
+}
