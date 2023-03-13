@@ -149,3 +149,23 @@ plus.addEventListener("click", () => {
     operator = "plus";
 }) 
 
+equals.addEventListener("click", () => {
+    let result = 0
+    switch (operator) {
+      case "plus":
+        result = parseInt(lastNum) + parseInt(display.innerText);
+        break;
+      case "minus":
+        result = parseInt(lastNum) - parseInt(display.innerText);
+        break;
+      case "multiply":
+        result = parseInt(lastNum) * parseInt(display.innerText);
+        break;
+      case "divide":
+        result = parseInt(lastNum) / parseInt(display.innerText);
+        break;
+    }
+    display.innerText = result;
+  })
+  
+
