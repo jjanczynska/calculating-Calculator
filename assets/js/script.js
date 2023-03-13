@@ -26,7 +26,7 @@ const nine = document.getElementById("nine");
 
 //declaring variables for functions used forward
 let lastNum = 0;
-let operator = "";
+let operator = " ";
 
 // adding event listeners with 'click'
 one.addEventListener("click",() => {
@@ -122,3 +122,30 @@ delOne.addEventListener("click", () => {
         display.innerText = 0;
     }
 })
+
+//adding event listeners to operator buttons( +, -, /, x)
+
+divide.addEventListener("click", () => {
+    lastNum = display.innerText;
+    display.innerText = 0;
+    operator = "dvide";
+})
+
+multiply.addEventListener("click", () => {
+    lastNum = display.innerText;
+    display.innerText = 0;
+    operator = "multiply";
+})    
+
+minus.addEventListener("click", () => {
+    lastNum = display.innerText;
+    display.innerText = 0;
+    operator = "minus";
+}) 
+
+plus.addEventListener("click", () => {
+    lastNum = display.innerText;
+    display.innerText = 0;
+    operator = "plus";
+}) 
+
