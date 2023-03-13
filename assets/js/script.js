@@ -101,3 +101,24 @@ nine.addEventListener("click", () => {
     }
 })
 
+zero.addEventListener("click", () => {
+    if(display.innerText === "0") {
+        display.innerText = 0;
+    } else {
+        display.innerText +=0;
+    }
+})
+
+//Event listeners for clear and delete
+
+clear.addEventListener("click", () => {
+    display.innerText = 0;
+})
+
+delOne.addEventListener("click", () => {
+    let str = display.innerText;
+    display.innerText = str.substring(0, str.length - 1);
+    if(display.innerText == "") {
+        display.innerText = 0;
+    }
+})
