@@ -4,10 +4,12 @@ body {
     font-family: "Prompt", sans-serif;
     background: linear-gradient(45deg, rgb(80, 188, 45), rgb(179, 15, 179));
     height: 100vh;
+    overflow: hidden;
 }
 
-
 .calculator {
+    margin: 0 auto;
+    margin-top: 5em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     border: 0.5em solid black;
@@ -59,7 +61,7 @@ button:hover {
 
 .equal {
     background-color: #813d76;
-    grid-column: 3/ 5;
+    grid-column: 2/ 4;
     grid-row: 6/ 7;
       
 }
