@@ -15,7 +15,7 @@ body {
     border: 1em solid black;
     border-radius: 2em;
     grid-auto-rows: 80px;
-    width: 400px;
+    width: 350px;
     row-gap: 3px;
     column-gap: 3px;
     text-align: center;
