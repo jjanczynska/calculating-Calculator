@@ -1,15 +1,17 @@
-body {
+/*body {
     padding: 0;
     margin: 0;
     font-family: "Prompt", sans-serif;
     background: linear-gradient(45deg, rgb(80, 188, 45), rgb(179, 15, 179));
     height: 100vh;
-}
+}*/
 
 
 .calculator {
     display: grid;
-    
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 80px;
+    width: 400px;
     text-align: center;
     background-color: rgb(80, 188, 45);
 }
@@ -26,7 +28,7 @@ body {
 
 
 
-button:active {
+/*button:active {
     box-shadow: 0 0.1rem grey;
     transform: translateY(00.1em);
 }
@@ -71,7 +73,7 @@ button:hover {
     border: 2px solid black;
     background-color: grey;
    
-}
+}*/
 
 
 
