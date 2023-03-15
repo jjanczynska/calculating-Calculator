@@ -167,5 +167,28 @@ equals.addEventListener("click", () => {
     }
     display.innerText = result;
   });
+
+  //setting a maximun limit on number input in the display screen
+  
+let maxDisplay = document.getElementById("display");
+const numberButtons = document.querySelectorAll("button");
+
+numberButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const currentValue = display.innerText;
+      const maxLength = 10;
+  
+      if (currentValue.length < maxLength) {
+        display.innerText = currentValue === "0" ? newValue : currentValue + newValue;
+      } else {
+        alert("Maximum number of digits reached!");
+      }
+    });
+  });
   
 
+  
+  
+  
+  
+  
