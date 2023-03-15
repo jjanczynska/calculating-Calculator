@@ -88,7 +88,10 @@ button:hover {
     background-color: #B5A886;
 }
 
-@media screen and (max-width:450px) {
+
+
+
+@media screen and (max-width:465px) {
 
     .calculator {
         margin: auto;
