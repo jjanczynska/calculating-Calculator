@@ -35,7 +35,7 @@ one.addEventListener("click",() => {
     } else {
         display.innerText += 1;
     }
-})
+});
 
 two.addEventListener("click",() => {
     if(display.innerText === "0") {
@@ -43,7 +43,7 @@ two.addEventListener("click",() => {
     } else {
         display.innerText += 2;
     }
-})
+});
 
 three.addEventListener("click", () => {
     if(display.innerText === "0") {
@@ -51,7 +51,7 @@ three.addEventListener("click", () => {
     } else {
         display.innerText += 3;
     }
-}) 
+}); 
 
 four.addEventListener("click", () => {
     if(display.innerText === "0") {
@@ -59,7 +59,7 @@ four.addEventListener("click", () => {
     } else {
         display.innerText += 4;
     }
-})
+});
 
 five.addEventListener("click", () => {
     if(display.innerText === "0") {
@@ -67,7 +67,7 @@ five.addEventListener("click", () => {
     } else {
         display.innerText += 5;
     }
-})
+});
 
 six.addEventListener("click", () => {
     if(display.innerText === "0") {
@@ -75,7 +75,7 @@ six.addEventListener("click", () => {
     } else {
         display.innerText +=6;
     }
-})
+});
 
 seven.addEventListener("click", () => {
     if(display.innerText ==="0") {
@@ -83,7 +83,7 @@ seven.addEventListener("click", () => {
     } else {
         display.innerText += 7;
     }
-})
+});
 
 eight.addEventListener("click", () => {
     if(display.innerText === "0") {
@@ -91,7 +91,7 @@ eight.addEventListener("click", () => {
     } else {
         display.innerText +=8;
     }
-})
+});
 
 nine.addEventListener("click", () => {
     if(display.innerText === "0") {
@@ -99,7 +99,7 @@ nine.addEventListener("click", () => {
     } else {
         display.innerText +=9;
     }
-})
+});
 
 zero.addEventListener("click", () => {
     if(display.innerText === "0") {
@@ -107,13 +107,13 @@ zero.addEventListener("click", () => {
     } else {
         display.innerText +=0;
     }
-})
+});
 
 //Event listeners for clear and delete
 
 clear.addEventListener("click", () => {
     display.innerText = 0;
-})
+});
 
 delOne.addEventListener("click", () => {
     let str = display.innerText;
@@ -121,7 +121,7 @@ delOne.addEventListener("click", () => {
     if(display.innerText == "") {
         display.innerText = 0;
     }
-})
+});
 
 //adding event listeners to operator buttons( +, -, /, x)
 
@@ -129,28 +129,28 @@ divide.addEventListener("click", () => {
     lastNum = display.innerText;
     display.innerText = 0;
     operator = "dvide";
-})
+});
 
 multiply.addEventListener("click", () => {
     lastNum = display.innerText;
     display.innerText = 0;
     operator = "multiply";
-})    
+});    
 
 minus.addEventListener("click", () => {
     lastNum = display.innerText;
     display.innerText = 0;
     operator = "minus";
-}) 
+}); 
 
 plus.addEventListener("click", () => {
     lastNum = display.innerText;
     display.innerText = 0;
     operator = "plus";
-}) 
+});
 
 equals.addEventListener("click", () => {
-    let result = 0
+    let result = 0;
     switch (operator) {
       case "plus":
         result = parseInt(lastNum) + parseInt(display.innerText);
@@ -166,6 +166,6 @@ equals.addEventListener("click", () => {
         break;
     }
     display.innerText = result;
-  })
+  });
   
 
