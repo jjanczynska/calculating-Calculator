@@ -170,8 +170,8 @@ equals.addEventListener("click", () => {
 
   //setting a maximun limit on number input in the display screen
   
-let maxDisplay = document.getElementById("display");
-const numberButtons = document.querySelectorAll("button");
+
+/*const numberButtons = document.querySelectorAll("button");
 
 numberButtons.forEach(button => {
     button.addEventListener("click", () => {
@@ -184,7 +184,7 @@ numberButtons.forEach(button => {
         alert("Maximum number of digits reached!");
       }
     });
-  });
+  });*/
   
 
   
