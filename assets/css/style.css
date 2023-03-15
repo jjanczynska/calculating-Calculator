@@ -9,15 +9,15 @@ body {
 
 .calculator {
     margin: 0 auto;
-    margin-top: 5em;
+    margin-top: 8em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     border: 1em solid black;
     border-radius: 2em;
     grid-auto-rows: 80px;
-    width: 350px;
-    row-gap: 3px;
-    column-gap: 3px;
+    width: 320px;
+    row-gap: 2px;
+    column-gap: 2px;
     text-align: center;
     background-color: black;
 
