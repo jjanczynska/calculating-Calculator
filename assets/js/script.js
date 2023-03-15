@@ -128,7 +128,7 @@ delOne.addEventListener("click", () => {
 divide.addEventListener("click", () => {
     lastNum = display.innerText;
     display.innerText = 0;
-    operator = "dvide";
+    operator = "divide";
 });
 
 multiply.addEventListener("click", () => {
