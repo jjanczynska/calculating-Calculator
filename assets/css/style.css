@@ -88,6 +88,16 @@ button:hover {
     background-color: #B5A886;
 }
 
+@media screen and (max-width:450px) {
+
+    .calculator {
+        margin-top: 0;
+        width: auto;
+        height: auto;
+    }
+
+}
+
 
 @media screen and (max-width:345px) {
 
