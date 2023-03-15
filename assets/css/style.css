@@ -91,9 +91,8 @@ button:hover {
 @media screen and (max-width:450px) {
 
     .calculator {
-        margin-top: 0;
-        width: auto;
-        height: auto;
+        margin: auto;
+        max-width: 300px;
     }
 
 }
@@ -102,9 +101,8 @@ button:hover {
 @media screen and (max-width:345px) {
 
     .calculator {
-        margin-top: 0;
-        width: auto;
-        height: auto;
+        margin: auto;
+        max-width: auto;
     }
 
 }
