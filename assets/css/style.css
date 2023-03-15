@@ -102,7 +102,7 @@ button:hover {
 
     .calculator {
         margin: auto;
-        max-width: auto;
+        max-width: 250px;
     }
 
 }
