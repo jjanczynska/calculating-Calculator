@@ -9,7 +9,7 @@ body {
 
 .calculator {
     margin: 0 auto;
-    margin-top: 8em;
+    margin-top: 6em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     border: 1em solid black;
