@@ -97,7 +97,8 @@ button:hover {
     }
 
     .calculator {
-        margin: auto;
+        margin-top: 3em;
+        max-height: fit-content;
     }
 
 
@@ -113,8 +114,9 @@ button:hover {
     }
 
     .calculator {
-        margin: auto;
+        margin-top: 2em;
         max-width: 300px;
+        max-height: fit-content;
     }
 
 }
