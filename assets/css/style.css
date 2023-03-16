@@ -15,7 +15,7 @@ body {
     border: 1em solid black;
     border-radius: 2em;
     grid-auto-rows: 80px;
-    width: 350px;
+    max-width: 350px;
     row-gap: 2px;
     column-gap: 2px;
     text-align: center;
@@ -98,7 +98,6 @@ button:hover {
 
     .calculator {
         margin: auto;
-        max-width: 380px;
     }
 
 
@@ -115,7 +114,7 @@ button:hover {
 
     .calculator {
         margin: auto;
-        max-width: 320px;
+        max-width: 300px;
     }
 
 }
