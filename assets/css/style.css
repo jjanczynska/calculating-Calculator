@@ -1,3 +1,5 @@
+/*Main body of the project*/
+
 body {
     padding: 0;
     margin: 0;
@@ -6,7 +8,7 @@ body {
     height: 100vh;
     overflow: hidden;
 }
-
+/* Calculator */
 .calculator {
     margin: 0 auto;
     margin-top: 6em;
@@ -23,7 +25,7 @@ body {
 
 }
 
-
+/* Calculator display screen */
 #display {
     grid-column: 1/ 5;
     background-color: white;
@@ -32,12 +34,12 @@ body {
     text-align: end;
     padding-right: 10px;
 }
-
+/* calculator buttons */
 button {
     font-size: 2em;
     font-weight: bold;
 }
-
+/* calculator buttons when active and on hover*/
 button:active {
     box-shadow: 0 0.1rem grey;
     transform: translateY(00.1em);
@@ -47,12 +49,12 @@ button:hover {
     background-color: yellow;
 }
 
-
+/* operator buttons*/
 .operator {
     background-color: #f0760c;
 
 }
-
+/* clear the whole screen function button*/
 .clear {
     background-color: #F44174;
     border: 2px solid black;
@@ -61,34 +63,34 @@ button:hover {
 
 
 }
-
+/* Equal sign button*/
 .equal {
     background-color: #7c3582;
     grid-column: 2/ 4;
     grid-row: 6/ 7;
 
 }
-
+/* only numeric buttons*/
 .number {
     border: 2px solid black;
     background-color: #B5A886;
 
 }
-
+/* Delete one space button*/
 .delOne {
     border: 2px solid black;
     background-color: rgb(235, 224, 22);
     grid-column: 1/ 3;
     grid-row: 2/ 3;
 }
-
+/* zero button*/
 .zero {
     border: 2px solid black;
     background-color: #B5A886;
 }
 
 
-
+/* Media Queries*/ 
 
 @media screen and (max-width:465px) {
 

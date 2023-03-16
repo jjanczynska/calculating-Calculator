@@ -29,7 +29,8 @@ let lastNum = 0;
 let operator = " ";
 
 /* adding event listeners with 'click'
-setting a maximun limit of 9 on number input in the display screen*/
+*setting a maximun limit of 9 on number input in the display screen
+*/
 one.addEventListener("click", () => {
     if (display.innerText.length < 9) {
         if (display.innerText === "0") {
@@ -167,7 +168,7 @@ plus.addEventListener("click", () => {
     display.innerText = 0;
     operator = "plus";
 });
-/* Finall function setting four cases for four operators
+/*  Finall function setting four cases for four operators
 for multiplication- setting limit of numbers being displayed in the calculator 
 for division- setting a limit on numbers displayed as a fraction to 2 after a '.' 
 */
