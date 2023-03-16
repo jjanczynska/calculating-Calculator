@@ -3,7 +3,9 @@
 ---
 ---
 
-### This project is a fully functioning online calculator. The target audience is anyone who needs to make a quick calculation in their daily life- like adding their grocery cost during shopping. It is designed to be responive and easy to accsess on a range of devices - desktop, laptop, tablet or a mobile phone. 
+### This project is a fully functioning online calculator. 
+### The target audience is anyone who needs to make a quick calculation in their daily life- like adding their grocery cost during shopping. 
+### It is designed to be responive and easy to accsess on a range of devices - desktop, laptop, tablet or a mobile phone. 
 ![mobile device testing](assets/images/responive.png) 
 
 ---
@@ -12,8 +14,8 @@
 ---
 ---
 ### First time visitor goals 
-1. As a First Time Visitor - want to be able to know what I am looking at.  Goal **-[x]**
-1. As A first Time Visitor - want to use it as any other calculator. Goal **-[x]**
+1. As a First Time Visitor - want to be able to know what I am looking at.  Goal checked! **-[x]**
+1. As A first Time Visitor - want to use it as any other calculator. Goal checked! **-[x]**
 
 
 ### Design
@@ -37,13 +39,14 @@
 ## **Features**
 ---
 ---
-### The calculator consists of a calculator screen. Underneath buttons are located in 5 rows. It is designed so each button is colourcoded by its functionality.
+### The calculator consists of a calculator screen. Underneath buttons are located in 5 rows. It is designed so each button is colour coded by its functionality.
 
 ![finished calculator](assets/images/calculator.png)
 
 ### Features left to implement:
 * Counter for performed operations
 * Modulus for performing operations on **%**
+* **.** to perfom operations on fractions
 ---
 ---
 ## **Technologies Used**
@@ -85,7 +88,7 @@
 ### Further testing:
 * The Website was tested on *Google Chrome*, *Internet Explorer*, *Microsoft Edge*, *Mozilla* and *Safari* browsers.
 * The Website was viewed on different devices such as Desktop, Laptop and Mobile Phones.
-* Friend and family were asked about their user experience.
+* Friends and family were asked about their user experience.
 * *Responsive Viewer* google extesion was used to monitor display of the project on multiple devices
 ![Responsive Viewer in a action](assets/images/mobile%20device%20testing.png)
 
