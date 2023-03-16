@@ -28,89 +28,109 @@ const nine = document.getElementById("nine");
 let lastNum = 0;
 let operator = " ";
 
-// adding event listeners with 'click'
-one.addEventListener("click",() => {
-    if(display.innerText === "0") {
-        display.innerText = 1;
-    } else {
-        display.innerText += 1;
+/* adding event listeners with 'click'
+setting a maximun limit of 9 on number input in the display screen*/
+one.addEventListener("click", () => {
+    if (display.innerText.length < 9) {
+        if (display.innerText === "0") {
+            display.innerText = 1;
+        } else {
+            display.innerText += 1;
+        }
     }
 });
 
-two.addEventListener("click",() => {
-    if(display.innerText === "0") {
-        display.innerText = 2;
-    } else {
-        display.innerText += 2;
+two.addEventListener("click", () => {
+    if (display.innerText.length < 9) {
+        if (display.innerText === "0") {
+            display.innerText = 2;
+        } else {
+            display.innerText += 2;
+        }
     }
 });
 
 three.addEventListener("click", () => {
-    if(display.innerText === "0") {
-        display.innerText = 3;
-    } else {
-        display.innerText += 3;
+    if (display.innerText.length < 9) {
+        if (display.innerText === "0") {
+            display.innerText = 3;
+        } else {
+            display.innerText += 3;
+        }
     }
-}); 
+});
 
 four.addEventListener("click", () => {
-    if(display.innerText === "0") {
-        display.innerText = 4;
-    } else {
-        display.innerText += 4;
+    if (display.innerText.length < 9) {
+        if (display.innerText === "0") {
+            display.innerText = 4;
+        } else {
+            display.innerText += 4;
+        }
     }
 });
 
 five.addEventListener("click", () => {
-    if(display.innerText === "0") {
-        display.innerText = 5;
-    } else {
-        display.innerText += 5;
+    if (display.innerText.length < 9) {
+        if (display.innerText === "0") {
+            display.innerText = 5;
+        } else {
+            display.innerText += 5;
+        }
     }
 });
 
 six.addEventListener("click", () => {
-    if(display.innerText === "0") {
-        display.innerText = 6;
-    } else {
-        display.innerText +=6;
+    if (display.innerText.length < 9) {
+        if (display.innerText === "0") {
+            display.innerText = 6;
+        } else {
+            display.innerText += 6;
+        }
     }
 });
 
 seven.addEventListener("click", () => {
-    if(display.innerText ==="0") {
-        display.innerText = 7;
-    } else {
-        display.innerText += 7;
+    if (display.innerText.length < 9) {
+        if (display.innerText === "0") {
+            display.innerText = 7;
+        } else {
+            display.innerText += 7;
+        }
     }
 });
 
 eight.addEventListener("click", () => {
-    if(display.innerText === "0") {
-        display.innerText = 8;
-    } else {
-        display.innerText +=8;
+    if (display.innerText.length < 9) {
+        if (display.innerText === "0") {
+            display.innerText = 8;
+        } else {
+            display.innerText += 8;
+        }
     }
 });
 
 nine.addEventListener("click", () => {
-    if(display.innerText === "0") {
-        display.innerText = 9;
-    } else {
-        display.innerText +=9;
+    if (display.innerText.length < 9) {
+        if (display.innerText === "0") {
+            display.innerText = 9;
+        } else {
+            display.innerText += 9;
+        }
     }
 });
 
 zero.addEventListener("click", () => {
-    if(display.innerText === "0") {
-        display.innerText = 0;
-    } else {
-        display.innerText +=0;
+    if (display.innerText.length < 9) {
+        if (display.innerText === "0") {
+            display.innerText = 0;
+        } else {
+            display.innerText += 0;
+        }
     }
 });
 
 //Event listeners for clear and delete
-
 clear.addEventListener("click", () => {
     display.innerText = 0;
 });
@@ -118,13 +138,12 @@ clear.addEventListener("click", () => {
 delOne.addEventListener("click", () => {
     let str = display.innerText;
     display.innerText = str.substring(0, str.length - 1);
-    if(display.innerText == "") {
+    if (display.innerText == "") {
         display.innerText = 0;
     }
 });
 
 //adding event listeners to operator buttons( +, -, /, x)
-
 divide.addEventListener("click", () => {
     lastNum = display.innerText;
     display.innerText = 0;
@@ -135,60 +154,44 @@ multiply.addEventListener("click", () => {
     lastNum = display.innerText;
     display.innerText = 0;
     operator = "multiply";
-});    
+});
 
 minus.addEventListener("click", () => {
     lastNum = display.innerText;
     display.innerText = 0;
     operator = "minus";
-}); 
+});
 
 plus.addEventListener("click", () => {
     lastNum = display.innerText;
     display.innerText = 0;
     operator = "plus";
 });
-
+/* Finall function setting four cases for four operators
+for multiplication- setting limit of numbers being displayed in the calculator 
+for division- setting a limit on numbers displayed as a fraction to 2 after a '.' 
+*/
 equals.addEventListener("click", () => {
     let result = 0;
     switch (operator) {
-      case "plus":
-        result = parseInt(lastNum) + parseInt(display.innerText);
-        break;
-      case "minus":
-        result = parseInt(lastNum) - parseInt(display.innerText);
-        break;
-      case "multiply":
-        result = parseInt(lastNum) * parseInt(display.innerText);
-        break;
-      case "divide":
-        result = parseInt(lastNum) / parseInt(display.innerText);
-        break;
+        case "plus":
+            result = parseInt(lastNum) + parseInt(display.innerText);
+            break;
+        case "minus":
+            result = parseInt(lastNum) - parseInt(display.innerText);
+            break;
+        case "multiply":
+            result = parseInt(lastNum) * parseInt(display.innerText);
+            if (result.toString().length > 10) {
+                result = "Error too big";
+            }
+            break;
+        case "divide":
+            result = parseInt(lastNum) / parseInt(display.innerText);
+            if (result.toString().length > 10) {
+                result = result.toFixed(2);
+            }
+            break;
     }
     display.innerText = result;
-  });
-
-  //setting a maximun limit on number input in the display screen
-  
-
-/*const numberButtons = document.querySelectorAll("button");
-
-numberButtons.forEach(button => {
-    button.addEventListener("click", () => {
-      const currentValue = display.innerText;
-      const maxLength = 10;
-  
-      if (currentValue.length < maxLength) {
-        display.innerText = currentValue === "0" ? newValue : currentValue + newValue;
-      } else {
-        alert("Maximum number of digits reached!");
-      }
-    });
-  });*/
-  
-
-  
-  
-  
-  
-  
+});
