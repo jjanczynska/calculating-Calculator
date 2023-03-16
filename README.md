@@ -1,4 +1,6 @@
 # **Calculating Calculator**
+
+[Visit the deployed project here](https://jjanczynska.github.io/calculating-Calculator/)
 ---
 ---
 ---
