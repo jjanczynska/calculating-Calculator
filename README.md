@@ -48,7 +48,7 @@
 ### Features left to implement:
 * Counter for performed operations
 * Modulus for performing operations on **%**
-* **.** to perfom operations on fractions
+* **.**   to perfom operations on fractions
 ---
 ---
 ## **Technologies Used**
@@ -70,6 +70,9 @@
 1. Photoshop:
     * Photoshop was used to resize images and edit photos for Readme file
 1. [Coolors](https://coolors.co/) was used for colour palette selection for the project
+1. Favicon :
+
+![added favicon in the website address](assets/images/favicon.png)
 ---
 ---
 ## **Testing**
